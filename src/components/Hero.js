@@ -1,6 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaFileDownload, FaArrowDown } from 'react-icons/fa';
+import profilePic from '../assets/profilepic2-crop.jpeg';
 import '../styles/Hero.css';
 
 const Hero = () => {
@@ -61,8 +62,8 @@ const Hero = () => {
         <div className="hero-image">
           <div className="profile-circle">
             <div className="profile-inner">
-              <div className="profile-initials">MP</div>
-              <div className="profile-role">MERN Developer</div>
+              <div className="profile-initials">
+<img src={profilePic} alt="Maitri Patel" className="profile-pic" />              </div>
             </div>
           </div>
           {/* Animated circles */}

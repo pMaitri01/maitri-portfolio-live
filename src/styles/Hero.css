@@ -145,7 +145,13 @@
   top: -30px;
   left: -30px;
 }
-
+.profile-pic{
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 14px;
+}
 /* Scroll Indicator */
 .scroll-indicator {
   position: absolute;
