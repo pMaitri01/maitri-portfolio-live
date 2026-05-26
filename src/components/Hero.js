@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="hero-social">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-btn">
+            <a href="https://github.com/pMaitri01" target="_blank" rel="noopener noreferrer" className="social-btn">
               <FaGithub />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-btn">

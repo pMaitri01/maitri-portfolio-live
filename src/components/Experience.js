@@ -7,8 +7,9 @@ const Experience = () => {
     {
       role: 'MERN Stack Developer Intern',
       company: 'Toshal Infotech',
-      duration: '2023 - Present',
-      location: 'Remote',
+      duration: 'Jan 2026 – Present',
+      type: 'Full-time',
+      location: 'Surat, Gujarat, India',
       responsibilities: [
         'Worked on full-stack web applications using MongoDB, Express.js, React.js, and Node.js',
         'Developed REST APIs and handled database operations',
@@ -16,8 +17,11 @@ const Experience = () => {
         'Built CRUD functionality for various application modules',
         'Collaborated with team members using Git and GitHub'
       ],
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT', 'Git', 'GitHub']
-    }
+tech: [
+  'React.js', 'Node.js', 'Express.js', 'MongoDB',
+  'REST APIs', 'JWT', 'Git', 'GitHub',
+  'Postman', 'VS Code'
+]    }
   ];
 
   return (
@@ -54,6 +58,10 @@ const Experience = () => {
                     <span>{exp.duration}</span>
                   </div>
                   <div className="meta-item">
+                    <FaBriefcase />
+                    <span>{exp.type}</span>
+                  </div>
+                  <div className="meta-item">
                     <FaMapMarkerAlt />
                     <span>{exp.location}</span>
                   </div>
@@ -87,24 +95,70 @@ const Experience = () => {
         </div>
 
         {/* Education Section */}
-        <div className="education-section">
-          <h3 className="education-title">Education</h3>
-          <div className="education-card">
-            <div className="education-header">
-              <div className="education-icon">
-                <FaGraduationCap />
-              </div>
-              <div className="education-info">
-                <h4>Master of Computer Applications (MCA)</h4>
-                <div className="education-details">Computer Science & Applications</div>
-              </div>
-            </div>
-            <p className="education-description">
-              Completed advanced studies in computer applications with focus on software development, 
-              database management, web technologies, and software engineering principles.
-            </p>
-          </div>
+   <div className="education-section">
+  <h3 className="education-title">Education</h3>
+
+  <div className="education-card">
+    <div className="education-header">
+      <div className="education-icon">
+        <FaGraduationCap />
+      </div>
+
+      <div className="education-info">
+        <h4>Master of Computer Applications (MCA)</h4>
+
+        <div className="education-details">
+          Computer Science & Applications • 2024 – 2026
         </div>
+
+        <div className="education-college">
+          Department of Computer Science, Rollwala Computer Center, Gujarat University, Ahmedabad.
+        </div>
+      </div>
+    </div>
+
+    {/* GRID CONTENT */}
+    <div className="education-content">
+
+      <div className="edu-block">
+        <h5>Overview</h5>
+        <p>
+          Focused on software development, web technologies, and database management 
+          with hands-on exposure to full-stack development.
+        </p>
+      </div>
+
+      <div className="edu-block">
+        <h5>Key Subjects</h5>
+        <div className="edu-tags">
+          <span>Data Structures</span>
+          <span>DBMS</span>
+          <span>Web Development</span>
+          <span>Software Engineering</span>
+          <span>Operating Systems</span>
+        </div>
+      </div>
+
+      <div className="edu-block">
+        <h5>Skills Gained</h5>
+        <div className="edu-tags">
+          <span>Problem Solving</span>
+          <span>Full Stack</span>
+          <span>Database Design</span>
+          <span>REST APIs</span>
+        </div>
+      </div>
+
+      <div className="edu-block">
+        <h5>Highlights</h5>
+        <p>
+          Built strong foundation in MERN stack and modern web application development.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
       </div>
     </section>
   );

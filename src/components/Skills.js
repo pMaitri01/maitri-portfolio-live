@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaCode } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiTailwindcss } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiTailwindcss, SiMysql, SiPostman } from 'react-icons/si';
 import '../styles/Skills.css';
 
 const Skills = () => {
+
   const skillCategories = [
     {
       title: 'Frontend',
@@ -30,11 +31,22 @@ const Skills = () => {
       icon: <FaCode />,
       skills: [
         { name: 'MongoDB', icon: <SiMongodb />, level: 80 },
+        { name: 'MySQL', icon: <SiMysql />, level: 75 },
+        { name: 'Postman', icon: <SiPostman />, level: 85 },
         { name: 'Git', icon: <FaGitAlt />, level: 85 },
         { name: 'GitHub', icon: <FaGithub />, level: 90 },
         { name: 'VS Code', icon: <FaCode />, level: 95 },
       ]
     }
+  ];
+
+  // ✅ NEW: Soft Skills (no progress bars)
+  const softSkills = [
+    'Problem Solving',
+    'Team Collaboration',
+    'Communication',
+    'Time Management',
+    'Adaptability'
   ];
 
   const concepts = [
@@ -51,6 +63,8 @@ const Skills = () => {
   return (
     <section id="skills" className="skills-section">
       <div className="skills-container">
+
+        {/* Title */}
         <div className="text-center mb-5">
           <h2 className="section-title">Technical Skills</h2>
           <div className="section-divider"></div>
@@ -59,6 +73,7 @@ const Skills = () => {
           </p>
         </div>
 
+        {/* Technical Skills */}
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <div key={index} className="skill-category">
@@ -66,6 +81,7 @@ const Skills = () => {
                 {category.icon}
                 {category.title}
               </h3>
+
               <div className="category-skills">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="skill-item">
@@ -76,6 +92,7 @@ const Skills = () => {
                       </div>
                       <span className="skill-percent">{skill.level}%</span>
                     </div>
+
                     <div className="skill-bar">
                       <div 
                         className="skill-progress"
@@ -89,7 +106,19 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Concepts Section */}
+        {/* ✅ NEW Soft Skills Section */}
+        <div className="softskills-section">
+          <h3 className="softskills-title">Soft Skills</h3>
+          <div className="softskills-grid">
+            {softSkills.map((skill, index) => (
+              <div key={index} className="softskill-item">
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Concepts */}
         <div className="concepts-section">
           <h3 className="concepts-title">Core Concepts</h3>
           <div className="concepts-grid">
@@ -100,6 +129,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

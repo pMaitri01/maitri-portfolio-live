@@ -21,9 +21,9 @@ const Footer = () => {
 
           {/* Social */}
           <div className="footer-social">
-            <a href="#"><FaGithub /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaEnvelope /></a>
+            <a href="https://github.com/pMaitri01"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/patel-maitri-16875a256"><FaLinkedin /></a>
+            <a href="mailto:maitrip306@email.com"><FaEnvelope /></a>
           </div>
 
           {/* Links */}

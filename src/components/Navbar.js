@@ -47,10 +47,10 @@ const Navbar = () => {
 
         {/* Social Links */}
         <div className="nav-social">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://github.com/pMaitri01" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a href="https://www.linkedin.com/in/patel-maitri-16875a256" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaLinkedin />
           </a>
           <a href="mailto:maitri@example.com" className="social-icon">
@@ -84,7 +84,7 @@ const Navbar = () => {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/patel-maitri-16875a256" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin />
             </a>
             <a href="mailto:maitri@example.com" className="social-icon">

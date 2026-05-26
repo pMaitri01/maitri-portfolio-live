@@ -15,15 +15,9 @@ const About = () => {
           <div className="about-text">
             <h3>Full Stack Developer (MERN Stack)</h3>
             <p>
-              I'm a passionate MERN Stack Developer with expertise in building modern web applications. 
-              With a Master's in Computer Applications and hands-on experience in full-stack development, 
-              I specialize in creating scalable, efficient, and user-friendly solutions.
-            </p>
+              I’m a passionate MERN Stack Developer with a Master’s in Computer Applications, skilled in building responsive and scalable web applications using MongoDB, Express.js, React, and Node.js. I enjoy turning ideas into real-world solutions and continuously strive to learn, grow, and create impactful digital experiences.            </p>
             <p>
-              My journey in web development started with a fascination for how technology can solve 
-              real-world problems. I enjoy the entire development process, from designing intuitive 
-              user interfaces to building robust backend systems.
-            </p>
+              I am eager to collaborate on innovative projects and contribute to meaningful solutions. With a strong problem-solving mindset and attention to detail, I aim to deliver high-quality work while continuously enhancing my technical skills. </p>
 
             {/* Personal Info */}
             <div className="about-info">
@@ -38,14 +32,13 @@ const About = () => {
                 <FaMapMarkerAlt className="info-icon" />
                 <div>
                   <span className="font-medium">Location:</span>
-                  <span className="text-light/70 ml-2">Gujarat, India</span>
-                </div>
+                  <span className="text-light/70 ml-2">Navsari, Gujarat, India</span>                </div>
               </div>
               <div className="info-item">
                 <FaCode className="info-icon" />
                 <div>
                   <span className="font-medium">Focus:</span>
-                  <span className="text-light/70 ml-2">MERN Stack Development</span>
+                  <span className="text-light/70 ml-2">Full Stack Development</span>
                 </div>
               </div>
             </div>

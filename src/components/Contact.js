@@ -68,7 +68,7 @@ export default function Contact() {
                   </div>
                   <div className="info-content">
                     <h4>Email</h4>
-                    <p>your@email.com</p>
+                    <p>maitrip306@email.com</p>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ export default function Contact() {
                   </div>
                   <div className="info-content">
                     <h4>Phone</h4>
-                    <p>+91 9876543210</p>
+                    <p>+91 6359186508</p>
                   </div>
                 </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
                   </div>
                   <div className="info-content">
                     <h4>Location</h4>
-                    <p>Gujarat, India</p>
+                    <p>Navsari, Gujarat, India</p>
                   </div>
                 </div>
 
@@ -99,16 +99,12 @@ export default function Contact() {
                 <h4>Follow Me</h4>
                 <div className="social-buttons">
 
-                  <a href="https://linkedin.com" className="social-button" target="_blank">
+                  <a href="https://www.linkedin.com/in/patel-maitri-16875a256" className="social-button" target="_blank">
                     <FaLinkedin />
                   </a>
 
-                  <a href="https://github.com" className="social-button" target="_blank">
+                  <a href="https://github.com/pMaitri01" className="social-button" target="_blank">
                     <FaGithub />
-                  </a>
-
-                  <a href="https://twitter.com" className="social-button" target="_blank">
-                    <FaTwitter />
                   </a>
 
                 </div>
@@ -122,7 +118,6 @@ export default function Contact() {
               <p>I am available for freelance or full-time opportunities.</p>
               <ul>
                 <li>Web Development</li>
-                <li>Internships</li>
                 <li>Full-time Jobs</li>
               </ul>
             </div>
