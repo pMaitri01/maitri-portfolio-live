@@ -40,7 +40,7 @@ const Projects = () => {
   { name: 'Vercel', icon: <SiVercel /> },
   { name: 'Postman', icon: <SiPostman /> }
 ],
-    // github: 'https://github.com/pMaitri01/Medi-Track-Frontend',
+    github: 'https://github.com/pMaitri01/Medi-Track-Frontend',
     live: 'https://medi-track-frontend-rosy.vercel.app/',
     admin: 'https://tinyurl.com/3pjvn4dr'
   };
