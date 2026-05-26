@@ -1,0 +1,378 @@
+/* Contact Section Styles */
+.contact-section {
+  padding: 100px 0;
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: rgba(15, 23, 42, 0.7);
+  border-radius: 15px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-label {
+  display: block;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form-input {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 1.2rem;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 100%;
+  padding: 15px 15px 15px 50px;
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #f8fafc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input textarea {
+  padding-left: 15px;
+  min-height: 150px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3);
+}
+
+/* Contact Information */
+.contact-info h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 30px;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.info-item-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.info-icon-contact {
+  background-color: rgba(14, 165, 233, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-icon-contact svg {
+  color: #0ea5e9;
+  font-size: 1.5rem;
+}
+
+.info-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 5px;
+}
+
+.info-content a,
+.info-content p {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.info-content a:hover {
+  color: #0ea5e9;
+}
+
+/* Social Links */
+.contact-social {
+  margin-bottom: 40px;
+}
+
+.contact-social h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background-color: #1e293b;
+  color: #f8fafc;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-button:hover {
+  background-color: rgba(14, 165, 233, 0.2);
+  color: #0ea5e9;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Availability */
+.availability {
+  background-color: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-info {
+  background-color: rgba(15, 23, 42, 0.5);
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+}
+
+.availability h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 10px;
+}
+
+.availability p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.availability ul {
+  list-style: none;
+  padding: 0;
+}
+
+.availability li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.availability li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-grid {
+    gap: 40px;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-form h3,
+  .contact-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .info-item-contact {
+    gap: 15px;
+  }
+
+  .info-icon-contact {
+    padding: 12px;
+  }
+
+  .info-icon-contact svg {
+    font-size: 1.3rem;
+  }
+
+  .social-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+
+  .contact-container {
+    padding: 0 15px;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 25px;
+  }
+
+  .contact-form h3,
+  .contact-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  .form-input input,
+  .form-input textarea {
+    padding: 12px 12px 12px 45px;
+    font-size: 0.95rem;
+  }
+
+  .form-icon {
+    left: 12px;
+    font-size: 1.1rem;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .info-items {
+    gap: 20px;
+  }
+
+  .info-item-contact {
+    gap: 12px;
+  }
+
+  .info-content h4 {
+    font-size: 1rem;
+  }
+
+  .info-content a,
+  .info-content p {
+    font-size: 0.95rem;
+  }
+
+  .social-buttons {
+    gap: 12px;
+  }
+
+  .social-button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .availability {
+    padding: 20px;
+  }
+
+  .availability h4 {
+    font-size: 1.1rem;
+  }
+
+  .availability p {
+    font-size: 0.95rem;
+  }
+
+  .availability li {
+    font-size: 0.95rem;
+  }
+}
