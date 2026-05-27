@@ -1,8 +1,31 @@
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUser } from "react-icons/fa";
 import "../styles/Contact.css";
 import { FaLinkedin, FaGithub} from "react-icons/fa";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_x55n882",
+      "template_m02h6w9",
+      form.current,
+      "gGt6vn0wEzvT9IC4m"
+    )
+    .then(
+      () => {
+        alert("Message sent successfully!");
+        form.current.reset();
+      },
+      () => {
+        alert("Failed to send message. Try again!");
+      }
+    );
+};
   return (
     <section className="contact-section" id="contact">
       <div className="contact-container">
@@ -20,15 +43,19 @@ export default function Contact() {
           <div className="contact-form">
             <h3>Send Message</h3>
 
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
 
               {/* Name */}
               <div className="form-group">
                 <label className="form-label">Name</label>
                 <div className="form-input">
                   <FaUser className="form-icon" />
-                  <input type="text" placeholder="Your Name" />
-                </div>
+<input 
+  type="text" 
+  name="from_name" 
+  placeholder="Your Name" 
+  required 
+/>                </div>
               </div>
 
               {/* Email */}
@@ -36,7 +63,12 @@ export default function Contact() {
                 <label className="form-label">Email</label>
                 <div className="form-input">
                   <FaEnvelope className="form-icon" />
-                  <input type="email" placeholder="Your Email" />
+                  <input 
+                    type="email" 
+                    name="from_email" 
+                    placeholder="Your Email" 
+                    required 
+                  />
                 </div>
               </div>
 
@@ -44,11 +76,17 @@ export default function Contact() {
               <div className="form-group">
                 <label className="form-label">Message</label>
                 <div className="form-input">
-                  <textarea placeholder="Your Message"></textarea>
+                  <textarea 
+                    name="message" 
+                    placeholder="Your Message" 
+                    required
+                  ></textarea>
                 </div>
               </div>
 
-              <button className="submit-btn">Send Message</button>
+              <button type="submit" className="submit-btn">
+  Send Message
+</button>
 
             </form>
           </div>
