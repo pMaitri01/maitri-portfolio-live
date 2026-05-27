@@ -3,6 +3,8 @@ import "../styles/Contact.css";
 import { FaLinkedin, FaGithub} from "react-icons/fa";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const form = useRef();
@@ -18,11 +20,11 @@ export default function Contact() {
     )
     .then(
       () => {
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully!");        
         form.current.reset();
       },
       () => {
-        alert("Failed to send message. Try again!");
+        toast.error("Failed to send message. Try again!");
       }
     );
 };
@@ -164,6 +166,11 @@ export default function Contact() {
 
         </div>
       </div>
+      <ToastContainer 
+  position="top-right"
+  autoClose={3000}
+  theme="dark"
+/>
     </section>
   );
 }
