@@ -40,26 +40,6 @@ const Skills = () => {
     }
   ];
 
-  // ✅ NEW: Soft Skills (no progress bars)
-  const softSkills = [
-    'Problem Solving',
-    'Team Collaboration',
-    'Communication',
-    'Time Management',
-    'Adaptability'
-  ];
-
-  const concepts = [
-    'Authentication',
-    'CRUD Operations',
-    'Responsive Design',
-    'Component Architecture',
-    'State Management',
-    'Database Design',
-    'API Integration',
-    'Version Control'
-  ];
-
   return (
     <section id="skills" className="skills-section">
       <div className="skills-container">
@@ -69,7 +49,7 @@ const Skills = () => {
           <h2 className="section-title">Technical Skills</h2>
           <div className="section-divider"></div>
           <p className="section-subtitle">
-            Here are the technologies and tools I work with to build modern web applications
+            Technologies and tools I use to build scalable web applications
           </p>
         </div>
 
@@ -104,30 +84,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* ✅ NEW Soft Skills Section */}
-        <div className="softskills-section">
-          <h3 className="softskills-title">Soft Skills</h3>
-          <div className="softskills-grid">
-            {softSkills.map((skill, index) => (
-              <div key={index} className="softskill-item">
-                {skill}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Concepts */}
-        <div className="concepts-section">
-          <h3 className="concepts-title">Core Concepts</h3>
-          <div className="concepts-grid">
-            {concepts.map((concept, index) => (
-              <div key={index} className="concept-item">
-                {concept}
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>
